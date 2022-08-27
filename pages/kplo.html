@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+    <link
+      rel="stylesheet"
+      href="../fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+    <title>- SpaceX - Launches</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="hamburger-menu" class="hamburger-main-menu">
+      <ul class="hamburger-menu--list">
+        <li><a href="./mission.html">Mission</a></li>
+        <li><a href="./launches.html">Launches</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="header">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="SpaceX logo" class="logo-image" />
+        </a>
+      </div>
+      <nav class="home-main-menu">
+        <ul class="home-main-menu--list">
+          <li><a href="./falcon9.html">Falcon 9</a></li>
+          <li><a href="./falconheavy.html">Falcon Heavy</a></li>
+          <li><a href="./dragon.html">Dragon</a></li>
+          <li><a href="./starship.html">Starship</a></li>
+          <li><a href="./humansf.html">Human Spaceflight</a></li>
+          <li><a href="#">Rideshare</a></li>
+          <li>
+            <a href="https://www.starlink.com/" target="_blank">Starlink</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="right-nav">
+        <a href="#">Shop</a>
+      </nav>
+    </header>
+
+    <button id="menu-btn" class="hamburger-btn" type="button">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </button>
+
+    <div class="content" id="content">
+      <div class="launch-container">
+        <div class="btn-back"><a href="./launches.html"><i class="fas fa-chevron-left"></i>BACK TO LAUNCHES</a></div>
+        <div class="img-play-transporter" id="btn-transporter">
+          <img src="../images/Launches_Desktop (3).jpg" alt="" />
+          <div class="img-play-overplay">&#9658;</div>
+          <button id="myBtn" class="">&#9658;</button>
+        </div>
+        <div class="article">
+            <h4 class="date">AUGUST 4, 2022</h4>
+            <h2 class="mission-name">KPLO MISSION</h2>
+            <div class="mission-desc">
+                <div class="half-col"><p >On Thursday, August 4 at 7:08 p.m. ET, Falcon 9 launched KPLO to a ballistic lunar transfer orbit from Space Launch Complex 40 (SLC-40) at Cape Canaveral Space Force Station in Florida.</p></div>
+                <div class="half-col"><p>This was the sixth launch and landing of this booster, which previously supported the launch of Arabsat-6A, STP-2, COSMO-SkyMed Second Generation FM2, and two Starlink missions.</p></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button id="myBtn" class="l-btn">&#9658;</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/rTrkHZjiO_8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <span class="close">&times;</span>
+        <h3>FALCON HEAVY FIRST FLIGHT</h3>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul class="footer-list">
+        <li>SpaceX &copy; 2022</li>
+        <li>
+          <a
+            href="https://twitter.com/spacex"
+            target="_blank"
+            class="footer-link"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/spacex"
+            target="_blank"
+            class="footer-link"
+            >Youtube</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/spacex/"
+            target="_blank"
+            class="footer-link"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flickr.com/photos/spacex"
+            target="_blank"
+            class="footer-link"
+            >Flickr</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/spacex"
+            target="_blank"
+            class="footer-link"
+            >Linkedin</a
+          >
+        </li>
+        <li><a href="" class="footer-link">Privacy Policy</a></li>
+        <li><a href="" class="footer-link">Suppliers</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var myBtn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    myBtn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    $(function () {
+      $(".close").click(function () {
+        $("iframe").attr("src", $("iframe").attr("src"));
+      });
+    });
+  </script>
+</html>
