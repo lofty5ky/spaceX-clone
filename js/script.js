@@ -33,9 +33,11 @@ window.addEventListener(
     if (st > lastScrollTop) {
       // downscroll code
       header.style.display = "none";
+      btn.style.display = "none";
     } else {
       // upscroll code
       header.style.display = "flex";
+      btn.style.display = "block";
       header.style.backgroundColor = "black";
       if (window.pageYOffset == 0) {
         header.style.backgroundColor = "transparent";
